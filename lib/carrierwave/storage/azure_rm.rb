@@ -141,7 +141,7 @@ module CarrierWave
         end
 
         def sign_url?(options)
-          @uploader.auto_sign_urls && !options[:skip_signing] && access_level == 'private'
+          @uploader.auto_sign_urls && !options[:skip_signing]
         end
 
         def blob
